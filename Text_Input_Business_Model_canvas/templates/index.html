@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Business Model Canvas Generator</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container-1">
+    <h2>Enter Your Idea:</h2>
+    <form action="{{ url_for('bmc') }}" method="post">
+      <textarea name="text" rows="10" cols="50"></textarea>
+      <br>
+      <button type="submit">Generate Business Model Canvas</button>
+    </form>
+  </div>
+</body>
+</html>
